@@ -1,0 +1,113 @@
+// Demo data only (replace with real API/database later)
+window.JCONNECT = {
+  categories: [
+    { name: "Electrician", icon: "💡", slug: "electrician", blurb: "Power, lighting, switchboards, safety checks." },
+    { name: "Air Conditioning", icon: "❄️", slug: "air-conditioning", blurb: "Repairs, servicing, installs, maintenance." },
+    { name: "Plumbing", icon: "🚰", slug: "plumbing", blurb: "Leaks, blocked drains, hot water systems." },
+    { name: "Handyman", icon: "🧰", slug: "handyman", blurb: "Small repairs, mounting, odd jobs." },
+    { name: "Cleaning", icon: "🧼", slug: "cleaning", blurb: "End-of-lease, deep clean, regular cleaning." },
+    { name: "Pest Control", icon: "🪳", slug: "pest-control", blurb: "Inspections, treatments, prevention plans." },
+    { name: "Locksmith", icon: "🔑", slug: "locksmith", blurb: "Lockouts, rekeying, upgrades." },
+    { name: "Painting", icon: "🖌️", slug: "painting", blurb: "Interior/exterior painting, touch-ups." },
+    { name: "Landscaping", icon: "🌿", slug: "landscaping", blurb: "Lawn care, garden tidy-up, clean-ups." }
+  ],
+
+  tradies: [
+    {
+      id: "sparkpro-electrical",
+      name: "SparkPro Electrical",
+      trade: "Electrician",
+      areas: ["Adelaide", "Port Augusta", "Whyalla"],
+      rating: 4.8,
+      reviews: 214,
+      verified: true,
+      response: "Typically replies within 1 hour",
+      about: "Licensed electricians for residential and commercial jobs. Friendly, on time, and safety-first.",
+      services: ["Lighting installs", "Switchboard upgrades", "Power points", "Fault finding"],
+      badges: ["✅ Verified", "⭐ Top-rated"],
+      phone: "(08) 0000 1001",
+      email: "hello@sparkpro.example",
+      hours: "Mon–Sat 7am–6pm"
+    },
+    {
+      id: "coolwave-ac",
+      name: "CoolWave Air & Electrical",
+      trade: "Air Conditioning",
+      areas: ["Whyalla", "Port Pirie"],
+      rating: 4.7,
+      reviews: 158,
+      verified: true,
+      response: "Typically replies within 2 hours",
+      about: "AC repair, servicing, and split-system installs. Built for Aussie summers.",
+      services: ["Split-system service", "Repairs", "Installations", "Maintenance plans"],
+      badges: ["✅ Verified", "🧾 Upfront quotes"],
+      phone: "(08) 0000 1002",
+      email: "service@coolwave.example",
+      hours: "Mon–Fri 8am–5pm"
+    },
+    {
+      id: "rapid-plumbing-co",
+      name: "Rapid Plumbing Co.",
+      trade: "Plumbing",
+      areas: ["Whyalla", "Port Augusta"],
+      rating: 4.6,
+      reviews: 190,
+      verified: true,
+      response: "Typically replies within 1–3 hours",
+      about: "Emergency callouts and general plumbing. Blocked drains, leaks, and hot water systems.",
+      services: ["Blocked drains", "Leak repairs", "Hot water systems", "Emergency plumbing"],
+      badges: ["✅ Verified", "🚨 Emergency"],
+      phone: "(08) 0000 1003",
+      email: "quotes@rapidplumbing.example",
+      hours: "24/7 Emergency"
+    },
+    {
+      id: "tidy-nest-cleaning",
+      name: "TidyNest Cleaning",
+      trade: "Cleaning",
+      areas: ["Adelaide", "Whyalla"],
+      rating: 4.5,
+      reviews: 96,
+      verified: false,
+      response: "Typically replies same day",
+      about: "Home cleaning with flexible scheduling. Great for end-of-lease and deep cleans.",
+      services: ["End-of-lease", "Deep clean", "Regular cleaning", "Move-in/out"],
+      badges: ["🧼 Popular", "📅 Flexible"],
+      phone: "(08) 0000 1004",
+      email: "bookings@tidynest.example",
+      hours: "Mon–Sat 8am–4pm"
+    },
+    {
+      id: "fixit-handyman",
+      name: "FixIt Handyman Services",
+      trade: "Handyman",
+      areas: ["Whyalla"],
+      rating: 4.4,
+      reviews: 72,
+      verified: false,
+      response: "Typically replies within 4 hours",
+      about: "Small repairs, mounting, patching, and those jobs you never get around to.",
+      services: ["Mounting", "Minor carpentry", "Repairs", "Odd jobs"],
+      badges: ["🧰 Reliable", "🏠 Home jobs"],
+      phone: "(08) 0000 1005",
+      email: "jobs@fixit.example",
+      hours: "Mon–Sun 9am–5pm"
+    },
+    {
+      id: "steelcity-locks",
+      name: "SteelCity Locksmiths",
+      trade: "Locksmith",
+      areas: ["Whyalla", "Port Pirie"],
+      rating: 4.7,
+      reviews: 141,
+      verified: true,
+      response: "Typically replies within 30 minutes",
+      about: "Lockouts, rekeying, and security upgrades. Fast mobile service.",
+      services: ["Lockouts", "Rekeying", "Lock upgrades", "Door hardware"],
+      badges: ["✅ Verified", "🚗 Mobile"],
+      phone: "(08) 0000 1006",
+      email: "support@steelcitylocks.example",
+      hours: "24/7 Emergency"
+    }
+  ]
+};
