@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jconnect | Find & hire trusted tradies</title>
+  <meta name="description" content="Jconnect helps customers find, compare and hire trusted tradies across Australia. Post a job, get quotes, and choose the right pro." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900;1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div id="headerMount"></div>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Get the right tradie — <span class="accent">fast</span>.</h1>
+          <p class="lead">
+            Jconnect is a recommendation-driven marketplace for professional services like electricians, AC repair,
+            plumbing, cleaning and more. Post your job once, compare profiles, and request quotes.
+          </p>
+
+          <div class="surface search">
+            <form id="searchForm" aria-label="Search tradies">
+              <div class="search-row">
+                <input id="searchInput" type="search" placeholder="Search: electrician, AC repair, plumbing…" />
+                <select id="categorySelect">
+                  <option value="all">All categories</option>
+                  <option value="electrician">Electrician</option>
+                  <option value="air-conditioning">Air Conditioning</option>
+                  <option value="plumbing">Plumbing</option>
+                  <option value="cleaning">Cleaning</option>
+                  <option value="handyman">Handyman</option>
+                  <option value="locksmith">Locksmith</option>
+                </select>
+                <button class="btn btn-primary" type="submit">Search</button>
+              </div>
+
+              <div class="hint-row">
+                Popular:
+                <button class="chip" type="button" data-chip="Switchboard upgrade">Switchboard upgrade</button>
+                <button class="chip" type="button" data-chip="Split system service">Split system service</button>
+                <button class="chip" type="button" data-chip="Emergency plumber">Emergency plumber</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="request.html">Post a job</a>
+            <a class="btn btn-outline" href="how-it-works.html">How it works</a>
+            <a class="btn btn-outline" href="for-tradies.html">I’m a tradie</a>
+          </div>
+
+          <div class="hint-row" style="margin-top:14px;">
+            <span class="pill">✅ Verified profiles (demo)</span>
+            <span class="pill">⭐ Ratings & reviews (demo)</span>
+            <span class="pill">📍 Local recommendations</span>
+          </div>
+        </div>
+
+        <aside class="surface hero-card">
+          <span class="badge">Preview build</span>
+          <h2 style="margin:10px 0 6px;">Coming soon</h2>
+          <p class="muted" style="margin:0 0 12px;">
+            Messaging, instant quotes, and secure payments will open soon. Use the demo flow to explore.
+          </p>
+          <a class="btn btn-primary btn-block" href="request.html">Try “Post a job” demo</a>
+          <p class="micro muted" style="margin-top:10px;">
+            You’ll also see a “Coming soon” pop-up for early access.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Popular categories</h2>
+          <p>Browse professional services available on Jconnect (demo listings).</p>
+        </div>
+        <div class="grid cards" id="categoryGrid" role="list"></div>
+        <div style="margin-top:14px;">
+          <a class="btn btn-outline" href="categories.html">View all categories</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Recommended tradies</h2>
+          <p>Compare profiles, ratings, and service areas (demo data).</p>
+        </div>
+        <div class="grid listings" id="featuredTradies" role="list" aria-label="Featured tradies"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>A simple flow for customers and professionals.</p>
+        </div>
+
+        <div class="grid cards" role="list">
+          <article class="card" role="listitem">
+            <div style="display:flex; gap:10px; align-items:center;">
+              <div class="icon">1</div><h3 style="margin:0;">Post a job</h3>
+            </div>
+            <p>Tell us what you need, your area, and your timeline.</p>
+            <a class="btn btn-outline" href="request.html">Post a job</a>
+          </article>
+
+          <article class="card" role="listitem">
+            <div style="display:flex; gap:10px; align-items:center;">
+              <div class="icon">2</div><h3 style="margin:0;">Get recommended tradies</h3>
+            </div>
+            <p>We suggest relevant professionals based on category and quality signals.</p>
+            <a class="btn btn-outline" href="how-it-works.html">Learn more</a>
+          </article>
+
+          <article class="card" role="listitem">
+            <div style="display:flex; gap:10px; align-items:center;">
+              <div class="icon">3</div><h3 style="margin:0;">Compare & hire</h3>
+            </div>
+            <p>Compare profiles and request quotes (live messaging coming soon).</p>
+            <a class="btn btn-outline" href="categories.html">Browse tradies</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Testimonials (sample)</h2>
+          <p>Replace these with real reviews once you launch.</p>
+        </div>
+
+        <div class="grid cards" role="list">
+          <article class="card" role="listitem">
+            <h3>“Quick and easy.”</h3>
+            <p class="muted">Posted a job and immediately saw recommended tradies to compare.</p>
+            <p class="micro muted">— Customer (sample)</p>
+          </article>
+          <article class="card" role="listitem">
+            <h3>“Great for busy homeowners.”</h3>
+            <p class="muted">All the key info is in one place—ratings, services, and areas.</p>
+            <p class="micro muted">— Customer (sample)</p>
+          </article>
+          <article class="card" role="listitem">
+            <h3>“Better leads (soon).”</h3>
+            <p class="muted">As a tradie, I want clear job details and fast communication.</p>
+            <p class="micro muted">— Tradie (sample)</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footerMount"></div>
+  <div id="modalMount"></div>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

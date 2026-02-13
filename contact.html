@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Jconnect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900;1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="headerMount"></div>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> / <span>Contact</span>
+        </div>
+
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Questions, partnerships, or feedback — send us a message (demo).</p>
+        </div>
+
+        <div class="two-col">
+          <section class="card">
+            <h3 style="margin-top:0;">Send a message</h3>
+            <form class="form" id="contactForm">
+              <div class="form-grid">
+                <div>
+                  <label class="micro muted" for="cName">Name</label>
+                  <input id="cName" required placeholder="Your name" />
+                </div>
+                <div>
+                  <label class="micro muted" for="cEmail">Email</label>
+                  <input id="cEmail" type="email" required placeholder="you@email.com" />
+                </div>
+              </div>
+
+              <div>
+                <label class="micro muted" for="cMsg">Message</label>
+                <textarea id="cMsg" required placeholder="Write your message..."></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Send</button>
+              <p class="micro muted">Demo only: this form shows an alert. Replace with backend/email later.</p>
+            </form>
+          </section>
+
+          <aside class="card">
+            <h3 style="margin-top:0;">Quick links</h3>
+            <p class="muted">Explore the demo flow:</p>
+            <a class="btn btn-outline btn-block" href="request.html">Post a job</a>
+            <a class="btn btn-outline btn-block" href="categories.html" style="margin-top:10px;">Browse categories</a>
+            <a class="btn btn-primary btn-block" href="for-tradies.html" style="margin-top:10px;">For tradies</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footerMount"></div>
+  <div id="modalMount"></div>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

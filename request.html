@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Post a job | Jconnect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900;1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="request">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="headerMount"></div>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> / <span>Post a job</span>
+        </div>
+
+        <div class="section-head">
+          <h2>Post a job (preview demo)</h2>
+          <p>Describe what you need — we’ll recommend tradies (demo matching).</p>
+        </div>
+
+        <div class="two-col">
+          <section class="card">
+            <h3 style="margin-top:0;">Job details</h3>
+
+            <form class="form" id="jobForm">
+              <fieldset>
+                <legend>What do you need?</legend>
+
+                <div class="form-grid">
+                  <div>
+                    <label class="micro muted" for="jobCategory">Category *</label>
+                    <select id="jobCategory" required></select>
+                  </div>
+                  <div>
+                    <label class="micro muted" for="jobPostcode">Postcode *</label>
+                    <input id="jobPostcode" required placeholder="e.g., 5600" />
+                  </div>
+                </div>
+
+                <div>
+                  <label class="micro muted" for="jobDesc">Describe the job *</label>
+                  <textarea id="jobDesc" required placeholder="Tell us what needs to be done, any urgency, and any details that help."></textarea>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Your contact</legend>
+                <div class="form-grid">
+                  <div>
+                    <label class="micro muted" for="custName">Name *</label>
+                    <input id="custName" required placeholder="Your name" />
+                  </div>
+                  <div>
+                    <label class="micro muted" for="custEmail">Email *</label>
+                    <input id="custEmail" type="email" required placeholder="you@email.com" />
+                  </div>
+                </div>
+              </fieldset>
+
+              <label style="display:flex; gap:10px; align-items:flex-start;">
+                <input id="jobConsent" type="checkbox" />
+                <span class="micro muted">
+                  I agree to the <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>. *
+                </span>
+              </label>
+
+              <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                <button class="btn btn-primary" type="submit">Post job</button>
+                <a class="btn btn-outline" href="categories.html">Browse categories</a>
+              </div>
+
+              <p class="micro muted">
+                Demo only: job data is stored in your browser (localStorage). Connect to backend later.
+              </p>
+            </form>
+          </section>
+
+          <aside class="card">
+            <h3 style="margin-top:0;">What happens next?</h3>
+            <p class="muted">
+              In the live version, tradies will send quotes and messages inside Jconnect.
+              For now, this page shows a demo recommendation list after you post.
+            </p>
+            <div class="pill">💬 Messaging — coming soon</div>
+            <div class="pill" style="margin-top:8px;">📸 Photo uploads — coming soon</div>
+            <div class="pill" style="margin-top:8px;">🔒 Secure payments — coming soon</div>
+
+            <div class="surface" style="padding:14px; margin-top:14px;">
+              <h4 style="margin:0 0 6px;">Are you a tradie?</h4>
+              <p class="micro muted" style="margin:0 0 10px;">Join early and get notified when leads open.</p>
+              <a class="btn btn-outline btn-block" href="for-tradies.html">Join as a tradie</a>
+            </div>
+          </aside>
+        </div>
+
+        <div style="margin-top:16px;" id="matchMount"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footerMount"></div>
+  <div id="modalMount"></div>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

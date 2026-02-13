@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For tradies | Jconnect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900;1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="tradies">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="headerMount"></div>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> / <span>For tradies</span>
+        </div>
+
+        <div class="section-head">
+          <h2>Grow your business with Jconnect</h2>
+          <p>Get discovered by customers looking for your trade. Early access onboarding is coming soon.</p>
+        </div>
+
+        <div class="grid cards" role="list">
+          <article class="card" role="listitem">
+            <h3>Better job fit</h3>
+            <p class="muted">Customers post details upfront so you can decide what to take.</p>
+            <span class="pill">🎯 Choose your jobs</span>
+          </article>
+          <article class="card" role="listitem">
+            <h3>Standout profile</h3>
+            <p class="muted">Show services, areas, response time and reviews.</p>
+            <span class="pill">⭐ Win more work</span>
+          </article>
+          <article class="card" role="listitem">
+            <h3>Less admin</h3>
+            <p class="muted">Quote + messaging + job tracking (coming soon).</p>
+            <span class="pill">🧾 Tools coming soon</span>
+          </article>
+        </div>
+
+        <div class="two-col" style="margin-top:14px;">
+          <section class="card">
+            <h3 style="margin-top:0;">Join early access (demo)</h3>
+            <form class="form" id="tradieJoinForm">
+              <div class="form-grid">
+                <div>
+                  <label class="micro muted" for="tName">Name</label>
+                  <input id="tName" required placeholder="Your name" />
+                </div>
+                <div>
+                  <label class="micro muted" for="tTrade">Trade</label>
+                  <input id="tTrade" required placeholder="e.g., Electrician" />
+                </div>
+              </div>
+              <div>
+                <label class="micro muted" for="tEmail">Email</label>
+                <input id="tEmail" type="email" required placeholder="you@business.com" />
+              </div>
+              <button class="btn btn-primary" type="submit">Join early access</button>
+              <p class="micro muted">Demo only: shows an alert. Connect to backend later.</p>
+            </form>
+          </section>
+
+          <aside class="card">
+            <h3 style="margin-top:0;">Prefer browsing?</h3>
+            <p class="muted">See demo tradie profiles and how customers compare.</p>
+            <a class="btn btn-outline btn-block" href="categories.html">Browse categories</a>
+            <a class="btn btn-primary btn-block" href="request.html" style="margin-top:10px;">Post a job</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footerMount"></div>
+  <div id="modalMount"></div>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

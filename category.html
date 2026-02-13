@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Browse tradies | Jconnect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900;1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="category">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="headerMount"></div>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> /
+          <a href="categories.html">Categories</a> /
+          <span id="crumbCategory">All categories</span>
+        </div>
+
+        <div class="section-head">
+          <h2>Browse tradies</h2>
+          <p>Search and filter professionals in the directory (demo).</p>
+        </div>
+
+        <form class="surface search" id="searchForm">
+          <div class="search-row">
+            <input id="searchInput" type="search" placeholder="Search services or business name…" />
+            <select id="categorySelect">
+              <option value="all">All categories</option>
+              <option value="electrician">Electrician</option>
+              <option value="air-conditioning">Air Conditioning</option>
+              <option value="plumbing">Plumbing</option>
+              <option value="handyman">Handyman</option>
+              <option value="cleaning">Cleaning</option>
+              <option value="pest-control">Pest Control</option>
+              <option value="locksmith">Locksmith</option>
+              <option value="painting">Painting</option>
+              <option value="landscaping">Landscaping</option>
+            </select>
+            <button class="btn btn-primary" type="submit">Search</button>
+          </div>
+
+          <div class="hint-row">
+            <button class="btn btn-outline btn-small" type="button" id="resetBtn">Reset</button>
+            <span class="micro muted">Tip: Click a profile to view details.</span>
+          </div>
+        </form>
+
+        <div class="toolbar">
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <span class="pill" id="resultsCount">Showing: 0</span>
+            <span class="pill" id="activeFilter">Category: All</span>
+          </div>
+          <a class="btn btn-outline btn-small" href="request.html">Post a job</a>
+        </div>
+
+        <div class="grid listings" id="results" role="list" aria-label="Tradie results"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footerMount"></div>
+  <div id="modalMount"></div>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
